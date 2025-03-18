@@ -1,12 +1,15 @@
 import logo from "../assets/logo.svg";
 import Nav from "./Nav";
 const Footer = () => {
+
+    const parameters = { styleNav: "nav_footer", showSubtitleNav: true, styleUl: "ul_footer" }
+
     return (
         <footer className="footer">
             <div className="footer_logo">
                 <img src={logo} alt="Logo company" />
             </div>
-            <Nav style="nav-footer" showSubtitle={true}/>
+            <Nav styleRulesNav={parameters} />
             <address className="footer_contact">
                 <h3>Contact us</h3>
                 <p>Email: <a href="mailto:contact@littlelemon.com">contact@littlelemon.com</a></p>

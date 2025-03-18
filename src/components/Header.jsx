@@ -2,12 +2,15 @@ import logo from "../assets/logo.svg";
 import Nav from "./Nav.jsx";
 
 const Header = () => {
+
+    const parameters = { styleNav: "nav_header", showSubtitleNav: false, styleUl: "ul_header" }
+
     return (
         <header>
-            <div>
-               <img src={logo} alt="Logo company" />
+            <div className="logo">
+                <img src={logo} alt="Logo company" />
             </div>
-            <Nav style="nav-menu"/>
+            <Nav styleRulesNav={parameters} />
         </header>
     );
 };

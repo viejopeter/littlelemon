@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom"
-const Nav = ({style, showSubtitle}) => {
+const Nav = ({styleRulesNav}) => {
     return (
-        <nav className={style}>
-            {showSubtitle && <h3>Menu</h3>}
-            <ul>
-                <li><Link to="/" className="nav-item">Home</Link></li>
-                <li><Link to="/about" className="nav-item">About us</Link></li>
-                <li><Link to="/menu" className="nav-item">Menu</Link></li>
-                <li><Link to="/reservations" className="nav-item">Reservations</Link></li>
-                <li><Link to="/order" className="nav-item">Order online</Link></li>
-                <li><Link to="/login" className="nav-item">Login</Link></li>
+        <nav className={styleRulesNav.styleNav}>
+            {styleRulesNav.showSubtitleNav && <h3>Menu</h3>}
+            <ul className={styleRulesNav.styleUl}>
+                <li><Link to="/" className="nav_item">Home</Link></li>
+                <li><Link to="/about" className="nav_item">About us</Link></li>
+                <li><Link to="/menu" className="nav_item">Menu</Link></li>
+                <li><Link to="/reservations" className="nav_item">Reservations</Link></li>
+                <li><Link to="/order" className="nav_item">Order online</Link></li>
+                <li><Link to="/login" className="nav_item">Login</Link></li>
             </ul>
         </nav>
     );
