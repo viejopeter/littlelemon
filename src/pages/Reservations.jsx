@@ -1,7 +1,7 @@
+import Bookingpage from "../components/Bookingpage";
+
 const Reservations = () => {
-    return (<p>
-        This is my Reservations
-    </p>);
+    return <><Bookingpage /></>;
 };
 
 export default Reservations;

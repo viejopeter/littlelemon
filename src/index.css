@@ -4,12 +4,45 @@
   color: #333333;
   background-color: #EDEFEE;
 }
-body{
+
+body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-  "Header"
-  "Main"
-  "Footer";
+    "Header"
+    "Main"
+    "Footer";
+}
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.05rem;
+  font-weight: bold;
+  color: rgb(251, 255, 0);
+}
+
+h2{
+  font-size: 1.5rem;
+  margin-bottom: 0.05rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+h3{
+  font-size: 1rem;
+  margin-bottom: 0.05rem;
+  font-weight: bold;
+  color: black;
+}
+button {
+  background-color: #FFC107;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
 }

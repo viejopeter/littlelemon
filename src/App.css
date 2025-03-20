@@ -14,7 +14,6 @@ header {
 
 main {
     grid-area: Main;
-    background-color: #495E57;
     padding: 1rem 10rem;
 }
 
@@ -45,6 +44,96 @@ footer {
     text-decoration: none;
 }
 
+/* End Header */
+
+/* Calltoaction */
+
+.calltoaction {
+    background-color: #495E57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.main-card-text {
+
+    width: 12.5rem;
+    height: 20.688rem;
+    color: white;
+}
+
+.main-card-img img {
+    width: 23.438rem;
+    height: 20.313rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* End Calltoaction */
+
+/* Specials */
+
+.specials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.specials-containter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "title button"
+        "cards cards";
+}
+
+.specials-title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.specials-button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.sp-cont-cards {
+    grid-area: cards;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.card {
+    width: 12.5rem;
+}
+
+.img-cards {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10px;
+}
+
+/* End Specials */
+
 /* Footer */
 .footer {
     display: flex;
@@ -56,3 +145,13 @@ footer {
     justify-content: start;
     align-items: center;
 }
+
+/* Reservations */
+
+.form-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End reservations */
