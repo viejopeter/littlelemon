@@ -1,7 +1,7 @@
 import Bookingform from "./Bookingform";
-const Bookingpage = () => {
+const Bookingpage = ({availabletimes,dispatch}) => {
     return <>
-    <Bookingform />
+    <Bookingform availabletimes={availabletimes} dispatch={dispatch}/>
     </>;
 }
 
